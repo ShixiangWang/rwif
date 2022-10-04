@@ -36,6 +36,7 @@ plot_parallel_coordinate(iris[, -c(3, 5)], group = iris$Species, legend_x = 2, l
 }
 \seealso{
 Other rwif-plot: 
+\code{\link{check_colors}()},
 \code{\link{plot_group_dots}()}
 }
 \concept{rwif-plot}

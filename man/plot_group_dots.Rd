@@ -36,10 +36,11 @@ Draw Grouped Dots
 plot_group_dots(
   VADeaths,
   title = "deaths per 1000 in 1940 Virginia stratified by age, gender, and location",
-  legend_title = "age bins")
+  legend_title = "age bins", legend_ncol = 5)
 }
 \seealso{
 Other rwif-plot: 
+\code{\link{check_colors}()},
 \code{\link{plot_parallel_coordinate}()}
 }
 \concept{rwif-plot}

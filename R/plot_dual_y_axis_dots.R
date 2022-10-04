@@ -1,4 +1,5 @@
 plot_dual_y_axis_dots = function() {
+  # remove global vars after clean this func
   par(mar = c(4,4,4,4))
   plot.new()
 

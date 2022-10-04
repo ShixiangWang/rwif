@@ -13,7 +13,7 @@
 #' plot_group_dots(
 #'   VADeaths,
 #'   title = "deaths per 1000 in 1940 Virginia stratified by age, gender, and location",
-#'   legend_title = "age bins")
+#'   legend_title = "age bins", legend_ncol = 5)
 plot_group_dots = function(data,
                            step = 0.25,
                            small_step = 0.01,
@@ -42,6 +42,8 @@ plot_group_dots = function(data,
     cmap = scales::alpha(pal, dot_alpha)
     names(cmap) = rownames(data)
     cols = as.character(cmap[dord])
+  } else {
+    cols = pal
   }
   same = c(FALSE, diff(x) == 0 & diff(y) == 0)
   for (i in rev(seq_along(x))) {
