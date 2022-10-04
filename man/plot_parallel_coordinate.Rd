@@ -25,10 +25,17 @@ plot_parallel_coordinate(
 
 \item{pal, dot_line_col, dot_line_width, var_name_col, legend_x, legend_y}{Plot settings.}
 }
+\value{
+Nothing.
+}
 \description{
 Draw parallel coordinate plot
 }
 \examples{
 plot_parallel_coordinate(iris[, -c(3, 5)], group = iris$Species, legend_x = 2, legend_y = 7)
+}
+\seealso{
+Other rwif-plot: 
+\code{\link{plot_group_dots}()}
 }
 \concept{rwif-plot}

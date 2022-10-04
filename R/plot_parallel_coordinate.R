@@ -3,6 +3,7 @@
 #' @param mat A `data.frame` with numeric columns.
 #' @param group A group vector for classification.
 #' @param pal,dot_line_col,dot_line_width,var_name_col,legend_x,legend_y Plot settings.
+#' @return Nothing.
 #' @family rwif-plot
 #' @export
 #' @examples
