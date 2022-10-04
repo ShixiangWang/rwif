@@ -1,4 +1,12 @@
-
+#' Draw parallel coordinate plot
+#' @source Adapted from <https://mp.weixin.qq.com/s/rcnkEY_FR9BStkEEC3ms_Q>
+#' @param mat A `data.frame` with numeric columns.
+#' @param group A group vector for classification.
+#' @param pal,dot_line_col,dot_line_width,var_name_col,legend_x,legend_y Plot settings.
+#' @family rwif-plot
+#' @export
+#' @examples
+#' plot_parallel_coordinate(iris[, -c(3, 5)], group = iris$Species, legend_x = 2, legend_y = 7)
 plot_parallel_coordinate = function(mat, group = NULL,
                                     pal = c("cornflowerblue", "red3", "orange"),
                                     dot_line_col = "grey",
