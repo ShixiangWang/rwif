@@ -9,15 +9,22 @@ Adapted from \url{https://mp.weixin.qq.com/s/rcnkEY_FR9BStkEEC3ms_Q}
 \usage{
 plot_group_dots(
   data,
+  step = 0.25,
+  small_step = 0.01,
   title = "",
+  dot_alpha = 0.5,
   legend_title = "",
+  legend_ncol = 1,
   pal = hcl.colors(nrow(data), "Zissou")
 )
 }
 \arguments{
 \item{data}{A numeric \code{data.frame}.}
 
-\item{title, legend_title, pal}{Plot settings.}
+\item{small_step}{A small step to discrete the points with equal value
+for better visualization.}
+
+\item{title, legend_title, legend_ncol, pal, step, dot_alpha}{Plot settings.}
 }
 \value{
 Nothing.
